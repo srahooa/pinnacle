@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import HomeView from './components/HomeView';
+import AboutMe from './components/AboutMe';
+import ServicesView from './components/ServicesView';
+import NavBar from './components/NavBar';
+
+export default class App extends React.Component {
+  state = {
+    location: "home"
+  }
+
+  getView() {
+    switch (this.state.location) {
+      case 'home':
+        return <HomeView/>
+      case 'aboutMe':
+        return <AboutMe/>
+      case 'services':
+        return <ServicesView/>
+      default:
+        return null
+    }
+  }
+
+  render () {
+    return (
+      <div className="App">
+        <div id="nav">
+          <button onClick={() => this.setState({ location: "home"})}>Home</button>
+          <button onClick={() => this.setState({ location: "aboutMe"})}>About Me</button>
+          <button onClick={() => this.setState({ location: "services"})}>Services</button>
+        </div>
+
+        <header className="App-header">
+          <div>
+            { this.getView() }
+          </div>
+        </header>
+      </div>
+    );
+  }
 }
-
-export default App;
