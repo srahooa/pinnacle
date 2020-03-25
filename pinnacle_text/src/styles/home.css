@@ -1,9 +1,25 @@
 @use "sass:map";
 body {
   background-color: white;
-  font-family: poly;
+  font-family: 'Courier New', Courier, monospace;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100% vp;
+    padding-bottom: 50px;
+  }
+  #container h1 {
+    padding: 75px 45px;
+    font-size: 3rem;
+  }
 }
 
 #home-view {
@@ -20,5 +36,36 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 200px;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+#home-view #quick-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#home-view #buttons {
+  font-size: 2rem;
+  margin: 30px;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+  border-style: double;
+  border-width: thick;
+  border-color: #909090;
+}
+
+#home-view #buttons:hover {
+  background-color: #87d3e3;
 }
 /*# sourceMappingURL=home.css.map */

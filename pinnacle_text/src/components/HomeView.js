@@ -5,7 +5,6 @@ import Header from './Header'
 import '../styles/home.scss'
 
 
-
 export default function HomeView() {
 
     return (
@@ -13,8 +12,19 @@ export default function HomeView() {
             <NavBar/>
             <Header/>
             <div id="home-view">
-                <h1>Here to put your words in the right order</h1>
-                <Link to='/'>Home</Link>
+                <p>Here to put your words in the right order</p>
+                <div id="quick-links">
+                    <Link id="buttons">Send Pages</Link>
+                    <Link id="buttons">Learn More</Link>
+                </div>
+                <div id="recent-work">
+                    <p>Example 1</p>
+                    <p>Example 2</p>
+                    <p>Example 3</p>
+                </div>
+                <div id="testemonials">
+                    <p>Alison is great!!!</p>
+                </div>
             </div>
         </>
     )

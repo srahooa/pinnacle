@@ -1,8 +1,24 @@
 @use "sass:map";
 body {
   background-color: white;
-  font-family: poly;
+  font-family: 'Courier New', Courier, monospace;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 420px) {
+  #container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100% vp;
+    padding-bottom: 50px;
+  }
+  #container h1 {
+    padding: 75px 45px;
+    font-size: 3rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */

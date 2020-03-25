@@ -2,12 +2,11 @@
 
 .nav {
     @include flex-c;
-    justify-content: space-around;
-    align-items: center;
+    // align-items: center;
     position: fixed;
-    height: 100vh;
-    width: 175px;
-    background-color: lightblue;
+    height: 100%;
+    width: 200px;
+    background-color: map-get($colours, "blue");
     padding-top: 175px;
     z-index: 0;
     border-right-style: solid;
@@ -17,7 +16,8 @@
         color: black;
         font-size: 1.8rem;
         text-decoration: none;
-        padding: 20px;
+        padding-bottom: 100px;
+        padding-left: 20px;
     };
     a:hover {
         color: map-get($colours, "yellow");
