@@ -1,0 +1,30 @@
+@use "sass:map";
+body {
+  background-color: white;
+  font-family: poly;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: lightblue;
+  z-index: -200;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.header img {
+  height: 150px;
+  padding-right: 100px;
+}
+/*# sourceMappingURL=header.css.map */

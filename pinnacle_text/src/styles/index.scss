@@ -1,0 +1,27 @@
+@use "sass:map";
+
+$colours: (
+    "yellow": #ffe700,
+    "blue": #87d3e3,
+    "grey": #909090,
+
+    "bkgnd-colour": white,
+    "link": rgb(42, 42, 111)
+);
+
+@mixin flex-r {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: map-get($colours, "bkgnd-colour");
+    font-family: poly;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,25 @@
+@import './index.scss';
+
+.nav {
+    @include flex-c;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 175px;
+    background-color: lightblue;
+    padding-top: 175px;
+    z-index: 0;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: black;
+    a {
+        color: black;
+        font-size: 1.8rem;
+        text-decoration: none;
+        padding: 20px;
+    };
+    a:hover {
+        color: map-get($colours, "yellow");
+    }
+}

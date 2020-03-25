@@ -1,13 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import '../styles/navbar.scss'
 
-export default class NavBar extends React.Component {
-    render() {
-        return (
-            <div id="nav">
-                <button onClick={() => this.setState({ location: "home"})}>Home</button>
-                <button onClick={() => this.setState({ location: "aboutMe"})}>About Me</button>
-                <button onClick={() => this.setState({ location: "services"})}>Services</button>
+export default function NavBar() {
+    return (
+        <>
+            <div className="nav">
+                <Link to='/'>Home</Link>
+                <Link to='/services'>Services</Link>
+                <Link to='/portfolio'>Portfolio</Link>
+                <Link to='/about'>About Me</Link>
             </div>
-        )
-    }
+        </>
+    )
 }

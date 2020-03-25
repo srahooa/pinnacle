@@ -3,14 +3,13 @@ import NavBar from './NavBar'
 import Header from './Header'
 
 
-export default function() {
+export default function Portfolio() {
 
     return (
         <>
             <NavBar/>
             <Header/>
-            <h1>About Me</h1>
-            <p>Lorem ipsum</p>
+            <h1>Portfolio</h1>
         </>
     )
 }

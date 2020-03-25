@@ -1,43 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
+import { BrowserRouter, Route } from 'react-router-dom'
+
 
 import HomeView from './components/HomeView';
 import AboutMe from './components/AboutMe';
 import ServicesView from './components/ServicesView';
-import NavBar from './components/NavBar';
+import Portfolio from './components/Portfolio';
 
-export default class App extends React.Component {
-  state = {
-    location: "home"
-  }
+export default function App()  {
 
-  getView() {
-    switch (this.state.location) {
-      case 'home':
-        return <HomeView/>
-      case 'aboutMe':
-        return <AboutMe/>
-      case 'services':
-        return <ServicesView/>
-      default:
-        return null
-    }
-  }
 
-  render () {
-    return (
-      <div className="App">
-        <div id="nav">
-          <button onClick={() => this.setState({ location: "home"})}>Home</button>
-          <button onClick={() => this.setState({ location: "aboutMe"})}>About Me</button>
-          <button onClick={() => this.setState({ location: "services"})}>Services</button>
+
+  return (
+    <>
+    {/* <h1>PINNACLE TEXT</h1> */}
+      <BrowserRouter>
+      <div>
+          <Route exact path='/'
+            component={HomeView} />
+          <Route exact path='/services'
+            component={ServicesView} />
+          <Route exact path='/portfolio'
+            component={Portfolio} />
+          <Route exact path='/about'
+            component={AboutMe} />
         </div>
-
-        <header className="App-header">
-          <div>
-            { this.getView() }
-          </div>
-        </header>
-      </div>
-    );
-  }
+      </BrowserRouter>
+    </>
+  );
 }

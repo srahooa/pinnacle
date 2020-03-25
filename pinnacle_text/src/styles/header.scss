@@ -1,0 +1,14 @@
+@import './index.scss';
+
+.header {
+    @include flex-r;
+    justify-content: flex-end;
+    background-color: lightblue;
+    z-index: -200;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    img {
+        height: 150px;
+        padding-right: 100px;
+    }
+}
