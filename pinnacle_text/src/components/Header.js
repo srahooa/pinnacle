@@ -6,9 +6,7 @@ export default function Header() {
     return (
         <>
             <div className="header">
-            <img
-                    src={require(`../assets/logo_figma.png`)}
-                />
+                <img src={require(`../assets/logo_figma.png`)}/>
             </div>
         </>
     )

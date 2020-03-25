@@ -11,7 +11,7 @@ export default function HomeView() {
         <>
             <NavBar/>
             <Header/>
-            <div id="home-view">
+            <div class="home-view">
                 <p>Here to put your words in the right order</p>
                 <div id="quick-links">
                     <Link id="buttons">Send Pages</Link>

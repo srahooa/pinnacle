@@ -1,0 +1,27 @@
+@import './index.scss';
+
+.about {
+    padding-top: 30px;
+    padding-left: 300px;
+    padding-right: 30px;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+
+    #pic {
+        padding-top: 100px;
+        text-align: left;
+        font-size: 12px;
+        width: 80%;
+    }
+    #text {
+        padding-top: 80px;
+        padding-right: 30px;
+        text-align: left;
+    }
+}
