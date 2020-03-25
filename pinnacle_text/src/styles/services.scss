@@ -1,0 +1,26 @@
+@import './index.scss';
+
+.services {
+    padding-top: 30px;
+    padding-left: 300px;
+    padding-right: 100px;
+    margin-top: 30px;
+    h1 {
+        text-align: right
+    }
+}
+#container {
+    // text-align: left;
+    #buttons {
+        font-size: 2rem;
+        margin: 30px;
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+        border-style: double;
+        border-width: thick;
+        border-color: map-get($colours, "grey");
+    }
+    #buttons:hover{
+        background-color: map-get($colours, "blue");
+    }}
