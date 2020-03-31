@@ -1,18 +1,17 @@
 @import './index.scss';
 
 .services {
-    padding-top: 30px;
-    padding-left: 300px;
-    padding-right: 100px;
+    padding: 30px 100px 100px 300px;
     margin-top: 30px;
     h1 {
         text-align: right
     }
 }
-#container {
-    // text-align: left;
+#links {
+    text-align: center;
+    padding: 20px;
     #buttons {
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin: 30px;
         color: black;
         text-decoration: none;
@@ -23,4 +22,5 @@
     }
     #buttons:hover{
         background-color: map-get($colours, "blue");
-    }}
+    }
+}

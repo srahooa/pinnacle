@@ -1,8 +1,8 @@
-@use "sass:map";
+// @use "sass:map";
 
 $colours: (
     "yellow": #ffe700,
-    "blue": #87d3e3,
+    "blue": lightblue,
     "grey": #909090,
 
     "bkgnd-colour": white,
@@ -28,7 +28,7 @@ $colours: (
 body {
     background-color: map-get($colours, "bkgnd-colour");
     font-family: 'Courier New', Courier, monospace;
-    padding: 0;
+    padding: 100px 0 0 0;
     margin: 0;
 }
 

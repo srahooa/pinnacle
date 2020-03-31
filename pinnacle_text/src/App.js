@@ -6,6 +6,7 @@ import HomeView from './components/HomeView';
 import AboutMe from './components/AboutMe';
 import ServicesView from './components/ServicesView';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 export default function App()  {
 
@@ -24,6 +25,8 @@ export default function App()  {
             component={Portfolio} />
           <Route exact path='/about'
             component={AboutMe} />
+          <Route exact path='/contact'
+          component={Contact} />
         </div>
       </BrowserRouter>
     </>

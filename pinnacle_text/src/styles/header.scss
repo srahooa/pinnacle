@@ -4,7 +4,9 @@
     @include flex-r;
     justify-content: flex-end;
     background-color: map-get($colours, "blue");
-    z-index: -200;
+    position: fixed;
+    width: 100%;
+    top: 0;
     border-bottom-style: solid;
     border-bottom-width: 2px;
     img {

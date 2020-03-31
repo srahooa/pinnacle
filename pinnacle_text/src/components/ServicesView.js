@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import NavBar from './NavBar'
 import Header from './Header'
+import Footer from './Footer'
 import '../styles/services.scss'
 
 export default function ServicesView() {
@@ -10,7 +11,7 @@ export default function ServicesView() {
         <>
             <NavBar/>
             <Header/>
-            <div class="services">
+            <div className="services">
                 <h1>SERVICES</h1>
                 <div id="contianer">
                     <h2>Writing</h2>
@@ -26,10 +27,17 @@ export default function ServicesView() {
                     <h3>Level 3: Developmental Editing</h3>
                         <p>Also called "substantive" editing, this is the most in-depth service Pinnacle Text provides. This is the "heavy lifting" of the editing world, necessary when your document needs to be re-organized for clarity or your ideas need to be further developed.</p>
                         <p>If you are a fiction writer or working on your autobiography or memoir, Pinnacle Text is qualified to help you develop your manuscript. </p>
-                    <Link id="buttons">Send Pages</Link>
-                
+                    <div id="links">
+                        <Link id="buttons">Send Pages</Link>
+                    </div>
+                    <h2>Subcontracting</h2>
+                        <p>Web designers & marketing firms: Let Pinnacle Text craft the copy while you perfect the look and function of your clients' websites and collateral.</p>
+                        <p>Schedule a consult to see if we click!</p>
+                    <h2>Print Consulting & Project Management</h2>
+                        <p>Offset or digital? Coated or uncoated? Book weight or cover weight? Embossed or debossed? Saddle stitched or perfect bound? Pinnacle Text is ready to guide you or your business through the nuanced world of commercial printing.</p>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
 import Header from './Header'
+import Footer from './Footer'
 
 
 export default function Portfolio() {
@@ -10,6 +11,7 @@ export default function Portfolio() {
             <NavBar/>
             <Header/>
             <h1>Portfolio</h1>
+            <Footer/>
         </>
     )
 }

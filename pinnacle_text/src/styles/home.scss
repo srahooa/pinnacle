@@ -5,8 +5,13 @@
     justify-content: flex-end;
     align-items: center;
     padding-left: 200px;
-    margin-top: 30px;
-    font-size: 2rem;
+    margin-top: 150px;
+    font-size: 1.8rem;
+    h3 {
+        font-weight: lighter;
+        font-size: 1.8rem;
+        padding: 40px;
+    }
     #quick-links {
        @include flex-r;
        justify-content: space-evenly;
@@ -25,3 +30,23 @@
         background-color: map-get($colours, "blue");
     }
 }
+#mid-section{
+    @include flex-r;
+    justify-content: space-around;
+    color: map-get($colours, "blue");
+    
+    #icon {
+        padding: 80px;
+    }
+    #icon:hover {
+        color: map-get($colours, "yellow");
+        transform: rotate(360deg);
+        transition: transform 3s;
+    }
+}
+.steps{
+    @include flex-r;
+    padding: 0 80px;
+    font-size: 1.2rem;
+    text-align: center;
+}    
