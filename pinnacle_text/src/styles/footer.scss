@@ -16,7 +16,7 @@
 
 
     .react-icons {
-        color: white;
+        color: map-get($colours, "grey");
         padding: 20px;
     }
     .react-icons:hover {
