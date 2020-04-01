@@ -14,9 +14,9 @@ export default function Contact() {
             <div id="container">
             <h1>Contact</h1>
             <h3>Drop me a line, I would love to hear from you.</h3>
-            <form id="contactForm">
+            <form name="contact" method="POST" data-netlify="true">
                 <div id="message">
-                    <textarea id="textbox"></textarea>
+                    <textarea id="textbox" name="message"></textarea>
                     <label>Message</label>
                 </div>
                 <div id="name">
@@ -25,10 +25,10 @@ export default function Contact() {
                 </div>
                 <div id="email">
                     <label id="emailLabel">Email</label>
-                    <input input id="emailInput" type="text" name="email"></input>
+                    <input input id="emailInput" type="email" name="email"></input>
                 </div>
                 <div>
-                    <button>Submit</button>
+                    <button type="submit">Send</button>
                 </div>
             </form>
             </div>
