@@ -33,7 +33,7 @@
 #mid-section{
     @include flex-r;
     justify-content: space-around;
-    color: map-get($colours, "blue");
+    color: map-get($colours, "grey");
     
     #icon {
         padding: 80px;
