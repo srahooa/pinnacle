@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
 
-
 import HomeView from './components/HomeView';
 import AboutMe from './components/AboutMe';
 import ServicesView from './components/ServicesView';
@@ -9,7 +8,6 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
 export default function App()  {
-
 
 
   return (
