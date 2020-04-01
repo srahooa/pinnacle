@@ -14,7 +14,8 @@ export default function Contact() {
             <div id="container">
             <h1>Contact</h1>
             <h3>Drop me a line, I would love to hear from you.</h3>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="post">
+                <input type="hidden" name="form-name" value="contact" />
                 <div id="message">
                     <textarea id="textbox" name="message"></textarea>
                     <label>Message</label>
