@@ -5,7 +5,7 @@
     background-color: map-get($colours, "yellow");
     color: map-get($colours, "grey");
     bottom: 0;
-    position: fixed;
+    position: relative;
     margin: auto;
     text-align: center;
     #icons {
