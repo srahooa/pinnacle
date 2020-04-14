@@ -50,9 +50,9 @@ export default function HomeView() {
                     <p>Example 2</p>
                     <p>Example 3</p>
                 </div>
-                <div id="testemonials">
+                <div id="testes">
                     <h2>Testimonials</h2>
-                    <div className="card">
+                    <div className="cards">
                         <Testimonials/>
                     </div>
                 </div>

@@ -13,17 +13,20 @@
     }
 }
 
-// .header {
-//     @include flex-r;
-//     justify-content: flex-end;
-//     background-color: white;
-//     position: fixed;
-//     width: 100%;
-//     top: 0;
-//     border-bottom-style: solid;
-//     border-bottom-width: 2px;
-//     img {
-//         height: 150px;
-//         padding-right: 100px;
-//     }
-// }
+@media only screen and (min-width: 768px) {
+    .header {
+        @include flex-r;
+        justify-content: flex-end;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        img {
+            width: 40%;
+            height: 150px;
+            padding-right: 100px;
+        }
+    }
+}

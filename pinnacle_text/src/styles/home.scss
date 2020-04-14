@@ -25,7 +25,21 @@
             background-color: map-get($colours, "link");
         }
     }
-    
+    #icon:hover {
+        color: map-get($colours, "link");
+        transform: rotate(360deg);
+        transition: transform 3s;
+    }
+    #testes {
+        @include flex-c;
+        align-items: center;
+        margin: 0;
+        .cards{
+            @include flex-c;
+            align-items: center;
+            margin: auto;
+        }
+    }
 }
 
 // .home-view {

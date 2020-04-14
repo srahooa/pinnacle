@@ -10,19 +10,16 @@ export default function Testimonials() {
 
     return (
         <>
-            <NavBar/>
-            <Header/>
             <div className="testimonials">
                 <div id="card">
-                    <h5>We love Pinnacle Text!! Alison is amazing and so easy to work with! My company utilizes Pinnacle Text to refine marketing campaign messaging, get written content for website designs, and develop client off-boarding recommendation documents. We highly recommend her services!</h5> 
-                    <p> -Angela K., Kelly Design</p>
+                    <p>We love Pinnacle Text!! Alison is amazing and so easy to work with! My company utilizes Pinnacle Text to refine marketing campaign messaging, get written content for website designs, and develop client off-boarding recommendation documents. We highly recommend her services!</p> 
+                    <h5> -Angela K., Kelly Design</h5>
                 </div>
                 <div id="card">
-                    <h5>Ali is awesome!</h5>
-                    <p> -Sarah A. Builder of site.</p>
+                    <p>Ali is awesome!</p>
+                    <h5> -Sarah A. Builder of site.</h5>
                 </div>
             </div>
-            <Footer/>
         </>
     )
 }
