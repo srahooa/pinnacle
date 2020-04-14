@@ -1,12 +1,12 @@
 // @use "sass:map";
 
 $colours: (
-    "yellow": #ffe700,
-    "blue": rgb(226, 248, 255),
+    "yellow": #faf4b7,
+    "blue": #76d7f5,
     "grey": #909090,
 
     "bkgnd-colour": white,
-    "link": rgb(42, 42, 111)
+    "link": #88b4ff
 );
 
 @mixin flex-r {
@@ -28,8 +28,8 @@ $colours: (
 body {
     background-color: map-get($colours, "bkgnd-colour");
     font-family: 'Courier New', Courier, monospace;
-    padding: 100px 0 0 0;
     margin: 0;
+    padding-bottom: 50px;
 }
 
 // Desktop

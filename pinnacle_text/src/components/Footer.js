@@ -8,6 +8,7 @@ export default function Footer() {
     return (
         <>
             <div className="footer">
+                <div id="icons">
                 <IconContext.Provider value={{className: "react-icons", size: "2em" }}>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/alison.bailey.14">
                         <FaFacebook />
@@ -19,8 +20,9 @@ export default function Footer() {
                         <FaLinkedin/>
                     </a>
                 </IconContext.Provider>
+                </div>
                 <div id="credit">
-                    Built by SooAldrich, 2020
+                    Built by Sarah Aldrich, 2020
                 </div>
             </div>
         </>

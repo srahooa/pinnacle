@@ -38,7 +38,7 @@
         margin: 20px 0 20px 0;
         font-size: 1.2em;
         font-family: courier;
-        background-color: map-get($colours, "blue")
+        background-color: map-get($colours, "link")
     }
     button:hover {
         background-color: map-get($colours, "yellow");
