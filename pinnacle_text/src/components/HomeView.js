@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 import Header from './Header'
 import Footer from './Footer'
+import Testimonials from './Testimonials'
 
 import { FaFileAlt, FaPhone, FaUserEdit }  from 'react-icons/fa'
 import { IconContext } from "react-icons"
@@ -16,34 +17,33 @@ export default function HomeView() {
         <>
             <NavBar/>
             <Header/>
-            <div class="home-view">
+            <div className="home-view">
                 <h3>Here to put your words in the right order</h3>
                 <div id="quick-links">
-                    <Link id="buttons">Send Pages</Link>
-                    <Link id="buttons">Learn More</Link>
+                    <Link to='/contact' id="buttons">Send Pages</Link>
+                    <Link to='/services' id="buttons">Learn More</Link>
                 </div>
-                <div id="mid-section">
-                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>                    
+                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
                     <div id="icon">
                         <FaFileAlt/>
                     </div>
-                </IconContext.Provider> 
-                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>                   
+                </IconContext.Provider>
+                <p>Send pages or project summary.</p>
+
+                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
                     <div id="icon">
                         <FaPhone/>
                     </div>
-                </IconContext.Provider> 
-                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>                    
-                    <div id="icon">    
-                        <FaUserEdit/>   
-                    </div>  
-                </IconContext.Provider> 
-                </div>
-                <article className="steps">
-                    <p>Send pages or project summary.</p>
-                    <p>Schedule phone consult or meeting.</p>
-                    <p>Review & approve proposal.</p>
-                </article>
+                </IconContext.Provider>
+                <p>Schedule phone consult or meeting.</p>
+
+                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
+                    <div id="icon">
+                        <FaUserEdit/>
+                    </div>
+                </IconContext.Provider>
+                <p>Review & approve proposal.</p>
+
                 <div id="recent-work">
                     <h2>Recent Work</h2>
                     <p>Example 1</p>
@@ -52,7 +52,9 @@ export default function HomeView() {
                 </div>
                 <div id="testemonials">
                     <h2>Testimonials</h2>
-                    <p>Alison is great!!!</p>
+                    <div className="card">
+                        <Testimonials/>
+                    </div>
                 </div>
             </div>
             <Footer/>

@@ -1,4 +1,32 @@
-// @import './index.scss';
+@import './index.scss';
+
+.home-view {
+    padding-top: 100px;
+    @include flex-c;
+    align-items: center;
+    h3 {
+        font-weight: lighter;
+        padding: 35px;
+        margin: 0;
+    }
+    #quick-links {
+        @include flex-c;
+        justify-content: space-between;
+        padding: 20px;
+        #buttons { 
+            padding: 10px;
+            text-decoration: none;
+            border-style: double;
+            border-width: thick;
+            border-color: map-get($colours, "grey");
+            margin: 20px;
+        }
+        #buttons:hover{
+            background-color: map-get($colours, "link");
+        }
+    }
+    
+}
 
 // .home-view {
 //     @include flex-c;

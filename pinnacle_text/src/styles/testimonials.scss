@@ -1,0 +1,11 @@
+@import './index.scss';
+
+.testimonials {
+    width: 70%;
+    #card {
+        border-radius: 5%;
+        padding: 25px;
+        margin: 25px;
+        background-color: map-get($colours, "grey");
+    }
+}
