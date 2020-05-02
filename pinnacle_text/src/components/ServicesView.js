@@ -13,7 +13,7 @@ export default function ServicesView() {
             <Header/>
             <div className="services">
                 <h1>SERVICES</h1>
-                <div id="contianer">
+                <div id="options">
                     <h2>Writing</h2>
                         <p>Business owners: Are you certain the text on your website and in your marketing materials clearly conveys what you offer? The wrong words in the wrong order could be costing you business. Let Pinnacle Text write fresh copy for your organization and feel confident in what you convey.</p>
                         <p>Schedule a consult for a free review of your marketing texts.</p>
@@ -28,7 +28,7 @@ export default function ServicesView() {
                         <p>Also called "substantive" editing, this is the most in-depth service Pinnacle Text provides. This is the "heavy lifting" of the editing world, necessary when your document needs to be re-organized for clarity or your ideas need to be further developed.</p>
                         <p>If you are a fiction writer or working on your autobiography or memoir, Pinnacle Text is qualified to help you develop your manuscript. </p>
                     <div id="links">
-                        <Link id="buttons">Send Pages</Link>
+                        <Link to="/contact">Send Pages</Link>
                     </div>
                     <h2>Subcontracting</h2>
                         <p>Web designers & marketing firms: Let Pinnacle Text craft the copy while you perfect the look and function of your clients' websites and collateral.</p>

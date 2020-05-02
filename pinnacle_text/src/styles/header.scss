@@ -1,16 +1,32 @@
 @import './index.scss';
 
 .header {
-    @include flex-r;
-    justify-content: flex-end;
-    background-color: map-get($colours, "blue");
     position: fixed;
-    width: 100%;
-    top: 0;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
+    background-color: white;
+    padding-top: 0;
+    z-index: 0;
+    width: 100vw;
     img {
-        height: 150px;
-        padding-right: 100px;
+        width: 75vw;
+        padding-left: 20px;
+        
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header {
+        @include flex-r;
+        justify-content: flex-end;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        img {
+            width: 40%;
+            height: auto;
+            padding-right: 100px;
+        }
     }
 }

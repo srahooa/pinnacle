@@ -1,46 +1,115 @@
 @import './index.scss';
 
-#container {
-    padding: 100px 100px 200px 100px;
+.contactPage {
+    padding-top: 100px;
+    padding-bottom: 70px;
     @include flex-c;
     align-items: center;
-    height: 60vh;
     h3 {
-        padding: 40px;
+        font-weight: lighter;
+        padding: 30px;
     }
-    #message {
-        #textbox {
-            width: 400px;
-            height: 200px;
-        }
-        padding-bottom: 20px;
+    #contactForm {
         @include flex-c;
+        align-items: center;
+        margin-left: 20px;
+        padding: 20px;
+        #message {
+            #textbox {
+                border: solid;
+                border-width: 1.5px;
+                border-color: map-get($colours, "grey");
+                width: 80%;
+                height: 300px;
+            }
+            padding-bottom: 20px;
+            @include flex-c;
+            #messageLabel {
+                padding-top: 15px;
+            }
+        }
+        #name {
+            padding-bottom:20px;
+            #nameLabel {
+                padding-right: 20px;
+            }
+            #nameInput {
+                width: 200px;
+            }
+        }
+        #phone {
+            padding-bottom:20px;
+            #phoneLabel {
+                padding-right: 20px;
+            }
+        }
+        #email {
+            #emailLabel {
+                padding: 20px 20px 20px 0;
+            }
+            #emailInput {
+                width: 200px;
+            }
+        }
+        button {
+            // padding: 30px;
+            margin: 20px 0 20px 0;
+            font-size: 1.2em;
+            font-family: courier;
+            background-color: map-get($colours, "link")
+        }
+        button:hover {
+            background-color: map-get($colours, "yellow");
+        }
     }
-    #name {
-        padding-bottom:20px;
-        #nameLabel {
-            padding-right: 20px;
-        }
-        #nameInput {
-            width: 200px;
-        }
-    }
-    #email {
-        #emailLabel {
-            padding: 20px 20px 20px 0;
-        }
-        #emailInput {
-            width: 200px;
-        }
-    }
-    button {
-        // padding: 30px;
-        margin: 20px 0 20px 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .contactPage {
+        padding: 50px 100px 200px 300px;
         font-size: 1.2em;
-        font-family: courier;
-        background-color: map-get($colours, "blue")
-    }
-    button:hover {
-        background-color: map-get($colours, "yellow");
+        @include flex-c;
+        align-items: center;
+        h3 {
+            padding: 40px;
+        }
+        #contactForm {
+            padding-bottom: 50px;
+            #message {
+                #textbox {
+                    width: 60vw;
+                    height: 200px;
+                }
+                padding-bottom: 20px;
+                @include flex-c;
+            }
+            #name {
+                padding-bottom:20px;
+                #nameLabel {
+                    padding-right: 20px;
+                }
+                #nameInput {
+                    width: 200px;
+                }
+            }
+            #email {
+                #emailLabel {
+                    padding: 20px 20px 20px 0;
+                }
+                #emailInput {
+                    width: 200px;
+                }
+            }
+            button {
+                // padding: 30px;
+                margin: 20px 0 20px 0;
+                font-size: 1.2em;
+                font-family: courier;
+                background-color: map-get($colours, "link")
+            }
+            button:hover {
+                background-color: map-get($colours, "yellow");
+            }
+        }
     }
 }

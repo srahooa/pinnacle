@@ -1,34 +1,27 @@
 @import './index.scss';
 
 .footer {
-    height: 75px;
-    color: map-get($colours, "yellow");
-    background-color: map-get($colours, "blue");
-    z-index: 100;
-    border-top-style: solid;
-    border-color: black;
-    border-width: 2px;
-    // position: fixed;
+    background-color: map-get($colours, "yellow");
+    color: map-get($colours, "grey");
     bottom: 0;
-    @include flex-r;
-    justify-content: flex-start;
-    padding-left: 300px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border-top-style: solid;
+    border-top-width: 2px;
 
-
+    // #icons {
+    //     width: 100vw;
+    // }
     .react-icons {
+        // @include flex-r;
+        align-items: center;
         color: map-get($colours, "grey");
-        padding: 20px;
+        padding: 15px;
+        margin: 0
     }
-    .react-icons:hover {
-        color: map-get($colours, "yellow");
+    #credit {
+        padding-bottom: 20px;
     }
-    
-}
-
-#credit {
-    color: black;
-    padding: 30px;
-    @include flex-r;
-    justify-content: flex-end;
-    width: 100vp;
 }

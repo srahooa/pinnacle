@@ -1,12 +1,12 @@
 // @use "sass:map";
 
 $colours: (
-    "yellow": #ffe700,
-    "blue": rgb(226, 248, 255),
+    "yellow": #faf4b7,
+    "blue": #76d7f5,
     "grey": #909090,
 
     "bkgnd-colour": white,
-    "link": rgb(42, 42, 111)
+    "link": #88b4ff
 );
 
 @mixin flex-r {
@@ -28,25 +28,15 @@ $colours: (
 body {
     background-color: map-get($colours, "bkgnd-colour");
     font-family: 'Courier New', Courier, monospace;
-    padding: 100px 0 0 0;
     margin: 0;
+    padding-bottom: 50px;
+    height: 100vh;
 }
 
 // Desktop
-@media screen and (max-width: 1024px) {
-
-}
-
-// Phone
-@media screen and (max-width: 420px) {
-    #container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100% vp;
-        padding-bottom: 50px;
-        h1 {
-            padding: 75px 45px;
-            font-size: 3rem;
-        }
+@media screen and (min-width: 600px) {
+    body {
+        padding-top: 200px;
+        padding-bottom: 150px;
     }
 }

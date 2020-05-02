@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
 import Header from './Header'
 import Footer from './Footer'
+import Testimonials from './Testimonials'
 
 import { FaFileAlt, FaPhone, FaUserEdit }  from 'react-icons/fa'
 import { IconContext } from "react-icons"
@@ -16,43 +17,49 @@ export default function HomeView() {
         <>
             <NavBar/>
             <Header/>
-            <div class="home-view">
-                <h3>Here to put your words in the right order</h3>
+            <div className="home-view">
+                <h3>Here to put your words in the right order.</h3>
                 <div id="quick-links">
-                    <Link id="buttons">Send Pages</Link>
-                    <Link id="buttons">Learn More</Link>
+                    <Link to='/contact' id="buttons">Send Pages</Link>
+                    <Link to='/services' id="buttons">Learn More</Link>
                 </div>
-                <div id="mid-section">
-                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>                    
-                    <div id="icon">
-                        <FaFileAlt/>
-                    </div>
-                </IconContext.Provider> 
-                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>                   
-                    <div id="icon">
-                        <FaPhone/>
-                    </div>
-                </IconContext.Provider> 
-                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>                    
-                    <div id="icon">    
-                        <FaUserEdit/>   
-                    </div>  
-                </IconContext.Provider> 
-                </div>
-                <article className="steps">
+                <div id="midsection">
+                    <h3>How I work...</h3>
+                    {/* <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
+                        <div id="icon">
+                            <FaFileAlt/>
+                        </div>
+                    </IconContext.Provider> */}
+                    <h1>1.</h1>
                     <p>Send pages or project summary.</p>
+{/* 
+                    <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
+                        <div id="icon">
+                            <FaPhone/>
+                        </div>
+                    </IconContext.Provider> */}
+                    <h1>2.</h1>
                     <p>Schedule phone consult or meeting.</p>
+
+                    {/* <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
+                        <div id="icon">
+                            <FaUserEdit/>
+                        </div>
+                    </IconContext.Provider> */}
+                    <h1>3.</h1>
                     <p>Review & approve proposal.</p>
-                </article>
+                </div>
                 <div id="recent-work">
-                    <h2>Recent Work</h2>
+                    {/* <h2>Recent Work</h2>
                     <p>Example 1</p>
                     <p>Example 2</p>
-                    <p>Example 3</p>
+                    <p>Example 3</p> */}
                 </div>
-                <div id="testemonials">
+                <div id="testes">
                     <h2>Testimonials</h2>
-                    <p>Alison is great!!!</p>
+                    <div className="cards">
+                        <Testimonials/>
+                    </div>
                 </div>
             </div>
             <Footer/>

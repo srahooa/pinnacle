@@ -1,26 +1,52 @@
 @import './index.scss';
 
 .services {
-    padding: 30px 100px 100px 300px;
-    margin-top: 30px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    @include flex-c;
+    align-items: center;
     h1 {
-        text-align: right
+        font-weight: lighter;
+        text-align: center;
     }
-}
-#links {
-    text-align: center;
-    padding: 20px;
-    #buttons {
-        font-size: 1.6rem;
-        margin: 30px;
-        color: black;
-        text-decoration: none;
-        padding: 5px;
+    #options {
+        @include flex-c;
+        align-items: center;
+        width: 75%;
+    }
+    #links {
+        padding: 10px;
         border-style: double;
         border-width: thick;
         border-color: map-get($colours, "grey");
+        margin: 20px;
+        a {
+            text-decoration: none;
+        }
     }
-    #buttons:hover{
-        background-color: map-get($colours, "blue");
+    #links:hover {
+        background-color: map-get($colours, "link");
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .services {
+        padding: 30px 100px 100px 300px;
+        margin-top: 30px;
+        font-size: 1.2em;
+    }
+    #links {
+        padding: 10px;
+        border-style: double;
+        border-width: thick;
+        border-color: map-get($colours, "grey");
+        margin: 20px;
+        a {
+            text-decoration: none;
+        }
+    }
+    #links:hover {
+        background-color: map-get($colours, "link");
     }
 }
