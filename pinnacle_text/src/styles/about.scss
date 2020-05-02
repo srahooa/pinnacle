@@ -29,28 +29,30 @@
 
 }
 
-// .about {
-//     padding: 50px 120px 100px 300px;
-//     margin-top: 30px;
-//     font-size: 1.2rem;
-//     text-align: center;
-//     height: 100%;
-//     #about-container {
-//         padding-top: 20px;
-//         display: grid;
-//         grid-template-columns: 1fr 1fr;
-//         grid-gap: 30px;
-//         #pic {
-//             @include flex-c;
-//             justify-content: flex-start;
-//             text-align: left;
-//             font-size: 12px;
-//         }
-//         #text {
-//             text-align: left;
-//             p {
-//                 margin-top: 0;
-//             }
-//         }
-//     }
-// }
+@media only screen and (min-width: 600px) {
+    .about {
+        padding: 50px 120px 100px 300px;
+        margin-top: 30px;
+        font-size: 1.2rem;
+        text-align: center;
+        height: 100%;
+        #about-container {
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            #pic {
+                @include flex-c;
+                justify-content: flex-start;
+                text-align: left;
+                font-size: 12px;
+            }
+            #text {
+                text-align: left;
+                p {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

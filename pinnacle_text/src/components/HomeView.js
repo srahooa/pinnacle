@@ -23,27 +23,28 @@ export default function HomeView() {
                     <Link to='/contact' id="buttons">Send Pages</Link>
                     <Link to='/services' id="buttons">Learn More</Link>
                 </div>
-                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
-                    <div id="icon">
-                        <FaFileAlt/>
-                    </div>
-                </IconContext.Provider>
-                <p>Send pages or project summary.</p>
+                <div id="midsection">
+                    <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
+                        <div id="icon">
+                            <FaFileAlt/>
+                        </div>
+                    </IconContext.Provider>
+                    <p>Send pages or project summary.</p>
 
-                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
-                    <div id="icon">
-                        <FaPhone/>
-                    </div>
-                </IconContext.Provider>
-                <p>Schedule phone consult or meeting.</p>
+                    <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
+                        <div id="icon">
+                            <FaPhone/>
+                        </div>
+                    </IconContext.Provider>
+                    <p>Schedule phone consult or meeting.</p>
 
-                <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
-                    <div id="icon">
-                        <FaUserEdit/>
-                    </div>
-                </IconContext.Provider>
-                <p>Review & approve proposal.</p>
-
+                    <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
+                        <div id="icon">
+                            <FaUserEdit/>
+                        </div>
+                    </IconContext.Provider>
+                    <p>Review & approve proposal.</p>
+                </div>
                 <div id="recent-work">
                     <h2>Recent Work</h2>
                     <p>Example 1</p>
