@@ -1,6 +1,5 @@
 @import './index.scss';
 
-
 .footer {
     background-color: map-get($colours, "yellow");
     color: map-get($colours, "grey");
@@ -8,7 +7,11 @@
     position: relative;
     margin: auto;
     text-align: center;
-    width: 100vw;
+    padding-left: 75px;
+    width: 100%;
+    border-top-style: solid;
+    border-top-width: 2px;
+
     // #icons {
     //     width: 100vw;
     // }

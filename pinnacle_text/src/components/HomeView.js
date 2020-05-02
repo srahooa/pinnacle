@@ -18,38 +18,42 @@ export default function HomeView() {
             <NavBar/>
             <Header/>
             <div className="home-view">
-                <h3>Here to put your words in the right order</h3>
+                <h3>Here to put your words in the right order.</h3>
                 <div id="quick-links">
                     <Link to='/contact' id="buttons">Send Pages</Link>
                     <Link to='/services' id="buttons">Learn More</Link>
                 </div>
                 <div id="midsection">
-                    <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
+                    <h3>How I work...</h3>
+                    {/* <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
                         <div id="icon">
                             <FaFileAlt/>
                         </div>
-                    </IconContext.Provider>
+                    </IconContext.Provider> */}
+                    <h1>1.</h1>
                     <p>Send pages or project summary.</p>
-
+{/* 
                     <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
                         <div id="icon">
                             <FaPhone/>
                         </div>
-                    </IconContext.Provider>
+                    </IconContext.Provider> */}
+                    <h1>2.</h1>
                     <p>Schedule phone consult or meeting.</p>
 
-                    <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
+                    {/* <IconContext.Provider value={{ className: 'react-icons', size: "3em"}}>
                         <div id="icon">
                             <FaUserEdit/>
                         </div>
-                    </IconContext.Provider>
+                    </IconContext.Provider> */}
+                    <h1>3.</h1>
                     <p>Review & approve proposal.</p>
                 </div>
                 <div id="recent-work">
-                    <h2>Recent Work</h2>
+                    {/* <h2>Recent Work</h2>
                     <p>Example 1</p>
                     <p>Example 2</p>
-                    <p>Example 3</p>
+                    <p>Example 3</p> */}
                 </div>
                 <div id="testes">
                     <h2>Testimonials</h2>
