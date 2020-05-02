@@ -67,15 +67,18 @@ nav {
 
 @media only screen and (min-width: 600px) {
     .nav {
+        display: flex;
+        justify-content: flex-start;
         position: fixed;
-        height: 100%;
+        top: 0;
+        height: 100vh;
+        // overflow: hidden;
+        padding-top: 130px;
         #desktopNav {
             @include flex-c;
             height: 100 vh;
             width: 200px;
             background-color: white;
-            padding-top: 175px;
-            z-index: 100;
             top: 0;
             border-right-style: solid;
             border-right-width: 2px;
@@ -84,8 +87,7 @@ nav {
                 color: black;
                 font-size: 1.8rem;
                 text-decoration: none;
-                padding-bottom: 100px;
-                padding-left: 20px;
+                padding: 100px 0 50px 20px;
             };
             a:hover {
                 color: map-get($colours, "link");
