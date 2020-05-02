@@ -1,6 +1,6 @@
 @import './index.scss';
-
-nav {
+@media only screen and (max-width: 599px) {
+.nav {
     @include flex-r;
     justify-content: flex-end;
     .hamburger {
@@ -9,25 +9,30 @@ nav {
         padding: 35px 20px 20px 20px;
         z-index: 150;
     }
-    #menuItems {
-        @include flex-c;
-        z-index: 200;
-        width: 100vw;
-        margin-top: 75px;
-        background-color: lightgray;
-        position: absolute;
-        text-align: center;
+    // #menuItems {
+    //     @include flex-c;
+    //     z-index: 200;
+    //     width: 100vw;
+    //     margin-top: 75px;
+    //     background-color: lightgray;
+    //     position: absolute;
+    //     text-align: center;
+    //     visibility: hidden;
+    //     // opacity: 0;
+    //     a {
+    //         @include flex-c;
+    //         // right: -100px;
+    //         font-size: 1.4em;
+    //         padding: 10px;
+    //         text-decoration: none;
+    //         border: 13px;
+    //         border-color: map-get($colours, "grey");
+    //     }
+    // }
+    #desktopNav {
         visibility: hidden;
-        opacity: 0;
-        a {
-            // right: -100px;
-            font-size: 1.4em;
-            padding: 10px;
-            text-decoration: none;
-            border: 13px;
-            border-color: map-get($colours, "grey");
-        }
     }
+}
 }
 
 

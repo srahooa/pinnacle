@@ -88,8 +88,11 @@
         #midsection{
             text-align: left;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             padding-right: 15px;
+            p {
+                padding: 5px;
+            }
             #icon {
                 padding: 80px;
                 grid-area: "icon";

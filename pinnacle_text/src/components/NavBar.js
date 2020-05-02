@@ -23,37 +23,30 @@ export default function NavBar() {
   return (
       <>
       <nav className="nav">
-        <div className="hamburger">
-          <IconContext.Provider value={{ className: 'react-icons', size: "1.8em"}}>
-            <div className="menuIcon" id="toggle" onClick={handleMenu}>
-              <FaBars/>
-            </div>
-          </IconContext.Provider>
+        <div className="mobileNav">
+          <div className="hamburger">
+            <IconContext.Provider value={{ className: 'react-icons', size: "1.8em"}}>
+              <div className="menuIcon" id="toggle" onClick={handleMenu}>
+                <FaBars/>
+              </div>
+            </IconContext.Provider>
+          </div>
+          <aside id="menuItems">
+            <Link to='/'>Home</Link>
+            <Link to='/services'>Services</Link>
+            {/* <Link to='/portfolio'>Portfolio</Link> */}
+            <Link to='/about'>About Me</Link>
+            <Link to='/contact'>Contact</Link>
+          </aside>
         </div>
-        <aside id="menuItems">
+
+        <div className="desktopNav" id="desktopNav">
           <Link to='/'>Home</Link>
           <Link to='/services'>Services</Link>
           {/* <Link to='/portfolio'>Portfolio</Link> */}
           <Link to='/about'>About Me</Link>
           <Link to='/contact'>Contact</Link>
-        </aside>
-  
-
-
-      {/* <button className="hamburger hamburger--collapse" type="button"
-              aria-label="Menu" aria-controls="navigation" aria-expanded="true/false">
-          <span className="hamburger-box">
-          <span className="hamburger-inner"></span>
-          </span>
-      </button> */}
-
-      <div id="desktopNav">
-          <Link to='/'>Home</Link>
-          <Link to='/services'>Services</Link>
-          {/* <Link to='/portfolio'>Portfolio</Link> */}
-          <Link to='/about'>About Me</Link>
-          <Link to='/contact'>Contact</Link>
-      </div>
+        </div>
       </nav>
       </>
   )
