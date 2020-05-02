@@ -13,7 +13,7 @@ export default function Footer() {
                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/alison.bailey.14">
                         <FaFacebook />
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pinnacletext">
                         <FaInstagram />
                     </a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alison-bailey-8370ba13/">
