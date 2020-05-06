@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import ServicesView from './components/ServicesView';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Construction from './components/Construction'
 
 export default function App()  {
 
@@ -16,15 +17,15 @@ export default function App()  {
       <BrowserRouter>
       <div>
           <Route exact path='/'
-            component={HomeView} />
-          <Route exact path='/services'
+            component={Construction} />
+          {/* <Route exact path='/services'
             component={ServicesView} />
           <Route exact path='/portfolio'
             component={Portfolio} />
           <Route exact path='/about'
             component={AboutMe} />
           <Route exact path='/contact'
-          component={Contact} />
+          component={Contact} /> */}
         </div>
       </BrowserRouter>
     </>
