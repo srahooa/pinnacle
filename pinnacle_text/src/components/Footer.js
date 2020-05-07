@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="footer">
                 <div id="icons">
                 <IconContext.Provider value={{className: "react-icons", size: "2em" }}>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/alison.bailey.14">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/pinnacletext">
                         <FaFacebook />
                     </a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/pinnacletext">

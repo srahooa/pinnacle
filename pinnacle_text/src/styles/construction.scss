@@ -8,21 +8,37 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: #faf4b7;
+    // background-image: url(../assets/background.jpg);
+    img {
+        width: 80vw;
+        height: auto;
+    }
     #headingA {
         text-align: center;
         font-weight: lighter;
+    }
+    h3 {
+        padding-bottom: 30px;
+    }
+    h2 {
+        padding-top: 40px;
     }
     #icons {
         display: flex;
         justify-content: space-evenly;
         padding-top: 100px;
-        color: #76d7f5;
+        color: #6a6a6a;
         a:active {
-            color: #76d7f5;
+            color: #6a6a6a;
         }
         a:visited {
-            color: #14b4e4;
+            color: #6a6a6a;
         }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #root img {
+        width: 60vw;
     }
 }
