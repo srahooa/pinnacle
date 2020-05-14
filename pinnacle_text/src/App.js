@@ -17,15 +17,15 @@ export default function App()  {
       <BrowserRouter>
       <div>
           <Route exact path='/'
-            component={Construction} />
-          {/* <Route exact path='/services'
+            component={HomeView} />
+          <Route exact path='/services'
             component={ServicesView} />
           <Route exact path='/portfolio'
             component={Portfolio} />
           <Route exact path='/about'
             component={AboutMe} />
           <Route exact path='/contact'
-          component={Contact} /> */}
+          component={Contact} />
         </div>
       </BrowserRouter>
     </>
